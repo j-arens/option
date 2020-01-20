@@ -1,0 +1,40 @@
+{
+  "name": "@jarens/option",
+  "version": "1.0.0",
+  "description": "A basic port of the Option type from Rust",
+  "keywords": [
+    "rust",
+    "option",
+    "typescript"
+  ],
+  "main": "index.js",
+  "types": "index.d.ts",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "tsc -d src/index.ts --outDir ./",
+    "lint": "eslint src/**/*.ts",
+    "test": "mocha -r ts-node/register test/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j-arens/option.git"
+  },
+  "bugs": {
+    "url": "https://github/com/j-arens/option/issues"
+  },
+  "author": "Josh Arens",
+  "homepage": "https://github.com/j-arens/option#readme",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^13.1.8",
+    "@typescript-eslint/eslint-plugin": "^2.17.0",
+    "@typescript-eslint/parser": "^2.17.0",
+    "eslint": "^6.8.0",
+    "mocha": "^7.0.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  }
+}
