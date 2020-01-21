@@ -1,5 +1,5 @@
 {
-  "name": "@jarens/option",
+  "name": "@j-arens/option",
   "version": "1.0.0",
   "description": "A basic port of the Option type from Rust",
   "keywords": [
@@ -14,8 +14,11 @@
   },
   "scripts": {
     "build": "tsc -d src/index.ts --outDir ./",
+    "compile": "npm run test && npm run lint && npm run build",
     "lint": "eslint src/**/*.ts",
-    "test": "mocha -r ts-node/register test/index.ts"
+    "test": "mocha -r ts-node/register test/index.ts",
+    "postversion": "git push && git push --tags",
+    "release": "npm run compile && npm version ${NEXT_VERSION=patch} && npm publish --access public"
   },
   "repository": {
     "type": "git",
