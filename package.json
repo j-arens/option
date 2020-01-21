@@ -1,6 +1,6 @@
 {
   "name": "@j-arens/option",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A basic port of the Option type from Rust",
   "keywords": [
     "rust",
