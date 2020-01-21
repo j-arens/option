@@ -7,7 +7,7 @@ This is a partial port of the [Option](https://doc.rust-lang.org/std/option/) ty
 Basic usage is the same as in Rust.
 
 ```ts
-import { Option, some, none } from '@jarens/option';
+import { Option, some, none } from '@j-arens/option';
 
 // basic setting and getting of values
 const greeting = some('hey there');
